@@ -3,13 +3,14 @@
   <remote name="github" fetch="https://github.com/"/>
 
   <!-- sdk start -->
-  <project path="." name="kendryte/k230_rtos_sdk" groups="sdk_super" remote="github" revision="main"/>
+  <project path="." name="yahboomrdc/k230_rtos_sdk" groups="sdk_super" remote="github" revision="main"/>
 
-  <project path="src/uboot/uboot" name="canmv-k230/u-boot" groups="sdk" remote="github" revision="canmv_k230"/>
+  <!-- <project path="src/uboot/uboot" name="canmv-k230/u-boot" groups="sdk" remote="github" revision="canmv_k230"/> -->
+  <project path="src/uboot/uboot" name="yahboomrdc/u-boot" groups="sdk" remote="github" revision="canmv_k230"/>
   <project path="src/opensbi/opensbi" name="canmv-k230/opensbi" groups="sdk-common" remote="github" revision="canmv_k230"/>
 
-  <project path="src/rtsmart/rtsmart" name="canmv-k230/rtsmart" groups="sdk" remote="github" revision="canmv_k230"/>
-  <project path="src/rtsmart/mpp" name="canmv-k230/mpp" groups="sdk" remote="github" revision="canmv_k230"/>
+  <project path="src/rtsmart/rtsmart" name="yahboomrdc/rtsmart" groups="sdk" remote="github" revision="canmv_k230"/>
+  <project path="src/rtsmart/mpp" name="yahboomrdc/mpp" groups="sdk" remote="github" revision="canmv_k230"/>
   <project path="src/rtsmart/libs" name="canmv-k230/k230_rtsmart_lib" groups="sdk" remote="github" revision="refs/heads/v2.9.0"/>
 
   <project path="src/rtsmart/libs/3rd-party/freetype/freetype" name="freetype/freetype" groups="sdk-common" remote="github" clone-depth="100" revision="1452355de99d22b0cba6ccc17bf5cdf3682ef61e"/>
@@ -18,12 +19,17 @@
   <project path="src/rtsmart/libs/3rd-party/lvgl/lvgl" name="lvgl/lvgl" groups="sdk-common" remote="github" clone-depth="100" revision="refs/heads/release/v9.4"/>
 
   <!-- canmv start -->
-  <project path="src/canmv" name="kendryte/canmv_k230" groups="canmv_super" remote="github" revision="canmv_k230"/>
+  <project path="src/canmv" name="yahboomrdc/canmv_k230" groups="canmv_super" remote="github" revision="canmv_k230"/>
+
+  <!-- yahboom extra -->
+  <project path="src/ybsdcard" name="yahboomrdc/ybsdcard" remote="github" revision="master"/>
+  <project path="src/canmv/port/builtin_py/yahboom" name="yahboomrdc/yahboom" remote="github" revision="main"/>
 
   <project path="src/canmv/micropython" name="canmv-k230/micropython" groups="canmv-common" remote="github" revision="canmv_k230"/>
   <project path="src/canmv/micropython/lib/micropython-lib" name="micropython/micropython-lib" groups="canmv-common" remote="github" clone-depth="200" revision="e025c843b60e93689f0f991d753010bb5bd6a722"/>
 
-  <project path="src/canmv/port/3rd-party/lv_bindings/lvgl" name="lvgl/lvgl" groups="canmv-common" remote="github" clone-depth="2000" revision="1bfdecf585bb50fbb22ed1c38450b5c9eb600196"/>
+  <!-- <project path="src/canmv/port/3rd-party/lv_bindings/lvgl" name="lvgl/lvgl" groups="canmv-common" remote="github" clone-depth="2000" revision="1bfdecf585bb50fbb22ed1c38450b5c9eb600196"/> -->
+  <project path="src/canmv/port/3rd-party/lv_bindings/lvgl" name="yahboomrdc/lvgl" groups="canmv-common" remote="github" clone-depth="2000" revision="dev-custom-lvgl"/>
   <project path="src/canmv/port/3rd-party/lv_bindings/pycparser" name="eliben/pycparser" groups="canmv-common" remote="github" clone-depth="1000" revision="3cf6bf5eb16f5eadd4a058e41596145c407a79ad"/>
 
 </manifest>
