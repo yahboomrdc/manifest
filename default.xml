@@ -23,7 +23,6 @@
 
   <!-- yahboom extra -->
   <project path="src/ybsdcard" name="yahboomrdc/ybsdcard" remote="github" revision="master"/>
-  <project path="src/canmv/port/builtin_py/yahboom" name="yahboomrdc/yahboom" remote="github" revision="main"/>
 
   <project path="src/canmv/micropython" name="canmv-k230/micropython" groups="canmv-common" remote="github" revision="canmv_k230"/>
   <project path="src/canmv/micropython/lib/micropython-lib" name="micropython/micropython-lib" groups="canmv-common" remote="github" clone-depth="200" revision="e025c843b60e93689f0f991d753010bb5bd6a722"/>
